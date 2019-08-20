@@ -50,6 +50,23 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "email",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://prod-10.eastus2.logic.azure.com:443/workflows/719e84807dc44ed5bab7e15811ee416a/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=zb2Q0WN6u1GwUxQ-NweiDmlfiXC3PUXRYiiZy4oztfE",
+					"method": "POST"
+				}
 			}
 		],
 		"annotations": []
